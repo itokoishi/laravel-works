@@ -1,0 +1,157 @@
+@charset "UTF-8";
+.not_view{
+    background: #efefef;
+}
+
+/* ----------------------------------------
+ 検索
+---------------------------------------- */
+#search-form {
+    dl {
+        margin: 0 0 20px 0;
+
+        dt, dd {
+            font-size: 14px;
+            margin: 0 0 5px 0;
+        }
+    }
+}
+
+/* -------------------------------------
+ 一覧
+------------------------------------- */
+#staff-list {
+    line-height: 1.6em;
+
+    .staff-content{
+        display: table;
+
+        &:last-child{
+            border-bottom: 1px solid #efefef;
+        }
+
+        div{
+            vertical-align: middle;
+            display: table-cell;
+            padding: 5px;
+            border-top: 1px solid #efefef;
+            border-left: 1px solid #efefef;
+
+            &.image {
+                width: 75px;
+
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            &.name {
+                width: 150px;
+            }
+
+            &.birthday{
+            }
+
+            &.bt-box{
+                border-right: 1px solid #efefef;
+
+            }
+        }
+    }
+}
+
+/* -------------------------------------
+登録ページ
+------------------------------------- */
+#staff-register-form {
+    th {
+        width: 200px;
+    }
+
+    #photo-box {
+        .image-box {
+            width: 250px;
+            text-align: center;
+        }
+    }
+}
+
+/* -------------------------------------
+ 編集処理
+------------------------------------- */
+#staff-modify-form {
+    th {
+        width: 200px;
+    }
+
+    #photo-box {
+        .image-box {
+            width: 250px;
+            text-align: center;
+        }
+    }
+}
+
+/* ----------------------------------------
+ 写真ページ
+---------------------------------------- */
+#photo-box {
+    #content-box {
+        max-width: 500px;
+
+        #select-bt {
+            text-align: center;
+        }
+
+        .photo-upload-btn {
+            margin: 0 0 20px 0;
+
+            input {
+                display: none;
+
+                &.cr-slider {
+                    border: none !important;
+                }
+            }
+
+            .croppie-container .cr-viewport {
+                border: none !important;
+            }
+
+            #twitter-user {
+                padding: 30px;
+            }
+        }
+
+        /*-- 登録 ---------------------*/
+        #register-photo {
+            text-align: center;
+
+            #register-photo-bt {
+                margin: 0 0 10px 0;
+            }
+        }
+
+        #crop-delete-box {
+            display: none;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
+        #crop-result {
+            display: none;
+            text-align: center;
+            margin: 0 0 10px 0;
+
+            img {
+                margin: 0 0 10px 0;
+            }
+        }
+
+        #croppie-bt-box {
+            text-align: center;
+            display: none;
+        }
+    }
+}

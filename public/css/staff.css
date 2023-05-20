@@ -1,0 +1,121 @@
+@charset "UTF-8";
+.not_view {
+  background: #efefef;
+}
+
+/* ----------------------------------------
+ 検索
+---------------------------------------- */
+#search-form dl {
+  margin: 0 0 20px 0;
+}
+#search-form dl dt, #search-form dl dd {
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+/* -------------------------------------
+ 一覧
+------------------------------------- */
+#staff-list {
+  line-height: 1.6em;
+}
+#staff-list .staff-content {
+  display: table;
+}
+#staff-list .staff-content:last-child {
+  border-bottom: 1px solid #efefef;
+}
+#staff-list .staff-content div {
+  vertical-align: middle;
+  display: table-cell;
+  padding: 5px;
+  border-top: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+}
+#staff-list .staff-content div.image {
+  width: 75px;
+}
+#staff-list .staff-content div.image img {
+  width: 100%;
+  border-radius: 50%;
+}
+#staff-list .staff-content div.name {
+  width: 150px;
+}
+#staff-list .staff-content div.bt-box {
+  border-right: 1px solid #efefef;
+}
+
+/* -------------------------------------
+登録ページ
+------------------------------------- */
+#staff-register-form th {
+  width: 200px;
+}
+#staff-register-form #photo-box .image-box {
+  width: 250px;
+  text-align: center;
+}
+
+/* -------------------------------------
+ 編集処理
+------------------------------------- */
+#staff-modify-form th {
+  width: 200px;
+}
+#staff-modify-form #photo-box .image-box {
+  width: 250px;
+  text-align: center;
+}
+
+/* ----------------------------------------
+ 写真ページ
+---------------------------------------- */
+#photo-box #content-box {
+  max-width: 500px;
+  /*-- 登録 ---------------------*/
+}
+#photo-box #content-box #select-bt {
+  text-align: center;
+}
+#photo-box #content-box .photo-upload-btn {
+  margin: 0 0 20px 0;
+}
+#photo-box #content-box .photo-upload-btn input {
+  display: none;
+}
+#photo-box #content-box .photo-upload-btn input.cr-slider {
+  border: none !important;
+}
+#photo-box #content-box .photo-upload-btn .croppie-container .cr-viewport {
+  border: none !important;
+}
+#photo-box #content-box .photo-upload-btn #twitter-user {
+  padding: 30px;
+}
+#photo-box #content-box #register-photo {
+  text-align: center;
+}
+#photo-box #content-box #register-photo #register-photo-bt {
+  margin: 0 0 10px 0;
+}
+#photo-box #content-box #crop-delete-box {
+  display: none;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+#photo-box #content-box #crop-result {
+  display: none;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+#photo-box #content-box #crop-result img {
+  margin: 0 0 10px 0;
+}
+#photo-box #content-box #croppie-bt-box {
+  text-align: center;
+  display: none;
+}
+
+/*# sourceMappingURL=staff.css.map */

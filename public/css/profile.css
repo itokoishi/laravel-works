@@ -1,0 +1,123 @@
+#prof-box {
+  margin: 0 0 20px 0;
+  width: 100%;
+  display: block;
+}
+@media (min-width: 540px) {
+  #prof-box {
+    display: table;
+  }
+}
+#prof-box #profile {
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media (min-width: 540px) {
+  #prof-box #profile {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+#prof-box #profile .prof-image {
+  width: 200px;
+  margin: 0 auto 10px auto;
+}
+#prof-box #profile .prof-image img {
+  border-radius: 50%;
+}
+#prof-box #profile .name {
+  text-align: center;
+  font-size: 28px;
+  vertical-align: middle;
+  margin: 0 0 10px 0;
+  line-height: 1em;
+}
+#prof-box #profile .name span {
+  font-size: 14px;
+}
+#prof-box #profile .content {
+  padding: 10px;
+  background: #fffbd4;
+}
+#prof-box #profile .content li {
+  padding: 2px;
+}
+#prof-box #greeting {
+  display: table-cell;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+#prof-box #greeting .text {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px dashed #a2d0b5;
+  border-radius: 5px;
+}
+
+#occupation {
+  display: table;
+  background: #daf4e5;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+#occupation dt {
+  display: table-cell;
+  text-align: center;
+  width: 70px;
+  padding: 10px;
+  background: #245152;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+#occupation dd {
+  display: table-cell;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#chart-box {
+  position: relative;
+  width: calc(100% - 40px);
+  height: 500px;
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+#chart-box #experience-chart {
+  width: 100%;
+  height: 500px;
+}
+
+table th {
+  font-weight: normal;
+  width: 200px;
+}
+table th span {
+  font-size: 12px;
+}
+table td .prof-sub-title {
+  background: #0C4648;
+  color: #FFFFFF;
+  padding: 5px;
+  margin: 0 0 20px 0;
+}
+@media (min-width: 540px) {
+  table td .prof-sub-title {
+    display: none;
+  }
+}
+table td dt {
+  margin: 0 0 5px 0;
+  padding: 5px;
+  background: #efefef;
+}
+table td dd {
+  margin: 0 0 5px 0;
+}
+
+/*# sourceMappingURL=profile.css.map */

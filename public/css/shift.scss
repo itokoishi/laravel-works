@@ -1,0 +1,161 @@
+@charset "UTF-8";
+#shift-tab {
+    margin: 0 0 20px 0;
+}
+
+main {
+    width: 100%;
+    min-width: 1024px;
+
+    aside {
+        display: none;
+    }
+
+    #top-link {
+        margin: 0 0 10px 0;
+    }
+
+
+    section#main-content {
+        @media (min-width: 1025px) {
+            width: 100%;
+            padding: 20px 20px 100px 20px;
+        }
+
+        /* -------------------------------------
+         スケジュール一覧
+        ------------------------------------- */
+        #shift {
+            .btn-sm, .btn-group-sm > .btn {
+                padding: 5px 15px;
+            }
+
+            table {
+                tr {
+                    th {
+                        padding: 2px;
+                        text-align: center;
+                        font-weight: normal;
+                        background: #efefef;
+                        color: #2b2b2b;
+                        width: 100px;
+                        font-size: 12px;
+                        vertical-align: middle;
+
+                        &.sun {
+                            color: #ff0e46;
+                        }
+
+                        &.sat {
+                            color: #0e66ff;
+                        }
+
+                        span {
+                            font-size: 12px;
+                        }
+
+                        &.staff-name {
+                            white-space: nowrap;
+                            text-align: left;
+                            width: 400px;
+                        }
+                    }
+
+                    td {
+                        vertical-align: middle;
+                        padding: 0;
+
+                        &:hover {
+                            background: #8bc2fc;
+                        }
+
+                        &.time {
+                            text-align: center;
+                            white-space: nowrap;
+
+                            a.register-bt {
+                                font-size: 10px;
+                                min-height: 30px;
+                                display: block;
+                                overflow: hidden;
+                                text-indent: 100%;
+                                white-space: nowrap;
+                            }
+
+                            a.modify-bt {
+                                font-size: 10px;
+                                min-height: 30px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------------
+ 時間登録モーダル
+------------------------------------- */
+.remodal#shift-modal {
+    #title {
+        font-size: 18px;
+    }
+
+    #register-box {
+        margin: 0 0 20px 0;
+
+        li {
+            list-style: none;
+            margin: 0 0 10px 0;
+
+            .time-title {
+                display: inline-block;
+                width: 100px;
+                font-size: 18px;
+            }
+
+            .start-time {
+                display: inline-block;
+                font-size: 18px;
+                width: 100px;
+            }
+
+            .start-min {
+                display: inline-block;
+                width: 100px;
+            }
+
+            .end-time {
+                display: inline-block;
+                width: 100px;
+            }
+
+            .end-min {
+                display: inline-block;
+                width: 100px;
+            }
+
+            .time-separator {
+                display: inline-block;
+                width: 10px;
+            }
+        }
+    }
+}
+
+/* -------------------------------------
+ 削除
+------------------------------------- */
+#delete-bt-box {
+    display: none;
+    border-top: 1px solid #efefef;
+    padding: 10px 0 0 0;
+    margin: 10px auto 0 auto;
+
+    a {
+        color: #e57373;
+        font-weight: bold;
+    }
+}

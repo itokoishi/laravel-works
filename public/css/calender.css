@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* -------------------------------------
+ カレンダー検索
+------------------------------------- */
+@media (max-width: 500px) {
+  #search-box {
+    width: 100%;
+  }
+}
+#search-box h1 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#search-box #search-open-close {
+  font-size: 14px;
+  color: #0c5460;
+  float: right;
+}
+#search-box #search-item {
+  display: none;
+}
+#search-box #search-item select {
+  width: 200px;
+}
+#search-box #search-item input {
+  width: 500px;
+}
+@media (max-width: 500px) {
+  #search-box #search-item input {
+    width: 100%;
+  }
+}
+
+/* -------------------------------------
+ カレンダー
+------------------------------------- */
+#calender-content {
+  background: #ffffff;
+}
+#calender-content .calendar-month {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+#calender-content .calendar-table {
+  width: 100%;
+  margin: 0 0 20px 0;
+  table-layout: fixed;
+}
+#calender-content .calendar-table th {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  background: #262626;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+}
+#calender-content .calendar-table th.sun {
+  background: #ff0e46;
+}
+#calender-content .calendar-table th.sat {
+  background: #0e66ff;
+}
+#calender-content .calendar-table td {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  padding: 10px;
+  vertical-align: top;
+  /*-- スケジュール個別データ ---------------------*/
+}
+#calender-content .calendar-table td.today {
+  background: #f4f4f4;
+}
+#calender-content .calendar-table td:first-child:before {
+  display: block;
+  float: left;
+  min-height: 100px;
+  /* この値は適宜書き換える */
+  content: "";
+}
+@media (max-width:500px) {
+  #calender-content .calendar-table td:first-child:before {
+    min-height: 50px;
+  }
+}
+#calender-content .calendar-table td .schedule-text {
+  font-size: 12px;
+  background: #1bc5a3;
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+#calender-content .calendar-table td span.c-date {
+  font-weight: bold;
+  line-height: 1.4em;
+}
+#calender-content .calendar-table td a {
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #27ae60;
+}
+#calender-content .calendar-table td a span {
+  color: #ff7107;
+}
+@media (max-width: 500px) {
+  #calender-content .calendar-table td .pc-reservation-data {
+    display: none;
+  }
+}
+#calender-content .calendar-table td .pc-reservation-data a {
+  border-bottom: 1px solid #efefef;
+  line-height: 1em;
+  padding: 5px;
+  box-sizing: border-box;
+}
+#calender-content .calendar-table td .pc-reservation-data a:last-child {
+  border: none;
+}
+#calender-content .calendar-table td .pc-reservation-data span.time {
+  font-size: 10px;
+}
+#calender-content .calendar-table td .pc-reservation-data span.name {
+  font-size: 14px;
+}
+#calender-content .calendar-table td .pc-reservation-data span.shop {
+  font-size: 10px;
+}
+@media (min-width: 500px) {
+  #calender-content .calendar-table td .sp-reservation-data {
+    display: none;
+  }
+}
+#calender-content .calendar-table td p.schedule-therapist {
+  border-bottom: 1px dotted #b3b3b3;
+}
+#calender-content .calendar-table td p.schedule-therapist:last-child {
+  border: none;
+}
+
+#register-box .form-title {
+  text-align: left;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+#register-box input {
+  margin: 0 0 10px 0;
+}
+#register-box textarea {
+  margin: 0 0 10px 0;
+}
+
+/*# sourceMappingURL=calender.css.map */
